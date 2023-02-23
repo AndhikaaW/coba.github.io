@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Halaman Beranda</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andhika">
+    <meta name="nim" content="223307090">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background: #ccc;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Website Saya</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gambar.html">Gambar</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">video</a></li>
+                <li><a href="svg.html">SVG</a></li>
+                <li><a href="canvas.html">Canvas</Canvas></a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</Canvas></a></li>
+            </ul>
+        </nav>
+        
+        <article>
+        <form method="post">
+            <fieldset>
+                <legend style="font-family: 'Times New Roman';">Informasi Pribadi</legend>
+                <label for="Nama" style="font-family: 'Times New Roman';"> Nama
+                    <input type="text" name="Nama">
+                </label><br><br>
+
+                <label for="No.Telepon" style="font-family: 'Times New Roman';">No. telepon
+                    <input type="tel" name="No.Telepon" required placeholder="XXXX-XXXXXX">
+                </label><br><br>
+
+                <label for="Alamat Email" style="font-family: 'Times New Roman';"> Alamat Email
+                    <input type="email" name="Alamat Email" required placeholder="email@gmail.com">
+                </label><br><br>
+
+                <label for="tanggal Lahir" style="font-family: 'Times New Roman';"> Tanggal Lahir
+                    <input type="date" name="Tanggal Lahir" min="1987-01-01" max="1993-01-01">
+                </label>
+            
+            </fieldset><br>
+
+            <fieldset>
+                <legend style="font-family: 'Times New Roman';">Permintaan Pertemuan</legend>
+                <label for="Tujuan Pertemuan" style="font-family: 'Times New Roman';">Tujuan Pertemuan
+                    <input type="text" name="Tujuan Pertemuan">
+                </label><br><br>
+                <label for="Tingkat Kepentingan Pertemuan" style="font-family: 'Times New Roman';">Tingkat Kepentingan Pertemuan
+                    <input type="range" name="Tingkat Kepentingan Pertemuan" min="0" max="10">
+                </label><br><br>
+                <label for="Tanggal" style="font-family: 'Times New Roman';">Tanggal
+                    <input type="date" name="Tanggal" min="2023-02-24">
+                </label><br><br>
+                <label for="Waktu" style="font-family: 'Times New Roman';">Waktu
+                    <input type="time" name="Waktu" min="17.00" max="21.00" required>
+                </label><br><br>
+            </fieldset>
+            <input type="submit">
+        </form>
+        </article>
+    </section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div id="header">
+    <h1 style="font-family: 'Times New Roman';">Form Penjadwal Pertemuan</h1>
+</div>
+<div id="main">
+    <fieldset style="width: 50% ;">                    <legend style="font-family: 'Times New Roman';">Form Pendaftaran Mahasiswa</legend>
+     <table>
+         <tr style="font-family: 'Times New Roman';">
+              <td>Nama</td>
+              <td><input type="text" name="Nama"></td>
+         </tr>
+         <tr style="font-family: 'Times New Roman';">
+            <td>No. Telepon</td>
+            <td><input type="tel" name="No.Telepon" required placeholder="(XXXX-XXXXXX)"></td>
+         </tr>
+         <tr style="font-family: 'Times New Roman';">
+            <td>Alamat Email</td>
+            <td><input type="email" name="Email" required placeholder="email@gmail.com"></td>
+         </tr>
+         <tr style="font-family: 'Times New Roman';">
+            <td>Tanggal Lahir</td>
+            <td><input type="date" name="Tanggal Lahir" min="1987-01-01" max="1993-01-01" ></td>
+         </tr>
+    </table>    
+    </fieldset>
+    <br>
+    <fieldset style="width: 100% ;">
+        <legend style="font-family: 'Times New Roman';">Permintaan Pertemuan</legend>
+
+    <table>
+        <tr style="font-family: 'Times New Roman';">
+            <td>Tujuan Pertemuan</td>
+            <td><input type="text" name="Tujuan Pertemuan" ></td>
+        </tr>
+        <tr style="font-family: 'Times New Roman';">
+            <td>Tingkat Kepentingan Pertemuan</td>
+            <td><input type="range" name="Tingkat Kepentingan Pertemuan" min="0" max="10"></td>
+        </tr>
+        <tr style="font-family: 'Times New Roman';">
+            <td>Tanggal</td>
+            <td><input type="date" name="tanggal" min="2023-02-24"></td>
+        </tr>
+        <tr style="font-family: 'Times New Roman';">
+            <td>Waktu</td>
+            <td><input type="time" name="Waktu" min="17.00" max="21.00" required></td>
+        </tr>
+    </table>
+    </fieldset>
+    <input type="submit"> 
+</div>
+
+<p>kesimpulan</p> -->
